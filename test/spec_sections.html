@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>spec_sectons</title>
+    <link href="./css/spec_sectons.css" rel="stylesheet">
+</head>
+<body>
+
+<pre>
+https://html.spec.whatwg.org/multipage/sections.html#the-article-element:the-article-element-4
+</pre>
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+ <header>
+  <h2 itemprop="headline">The Very First Rule of Life</h2>
+  <p><time datetime="2009-10-09" itemprop="datePublished">3 days ago</time></p>
+  <link href="?comments=0" itemprop="url">
+ </header>
+ <p>If there's a microphone anywhere near you, assume it's hot and
+ sending whatever you're saying to the world. Seriously.</p>
+ <p>...</p>
+ <section>
+  <h1>Comments</h1>
+  <article id="c1" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+   <link href="#c1" itemprop="url">
+   <footer>
+    <p>Posted by: <span itemprop="creator" itemscope itemtype="http://schema.org/Person">
+     <span itemprop="name">George Washington</span>
+    </span></p>
+    <p><time datetime="2009-10-10" itemprop="dateCreated">15 minutes ago</time></p>
+   </footer>
+   <p>Yeah! Especially when talking about your lobbyist friends!</p>
+  </article>
+  <article id="c2" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+   <link href="#c2" itemprop="url">
+   <footer>
+    <p>Posted by: <span itemprop="creator" itemscope itemtype="http://schema.org/Person">
+     <span itemprop="name">George Hammond</span>
+    </span></p>
+    <p><time datetime="2009-10-10" itemprop="dateCreated">5 minutes ago</time></p>
+   </footer>
+   <p>Hey, you have the same first name as me.</p>
+  </article>
+ </section>
+</article>
+
+
+
+<script src="./js/spec_sections.js"></script>
+</body>
+</html>

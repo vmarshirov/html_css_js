@@ -1,0 +1,16 @@
+li em {
+    color: rebeccapurple;
+}
+
+h1 + p {
+    font-size: 200%;
+}
+
+p[name="abc"]{color: green;}
+
+a:hover{
+
+}
+
+p:last-child{
+    background-color: yellow}
