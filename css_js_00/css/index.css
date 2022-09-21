@@ -1,0 +1,19 @@
+em{
+    color:green
+}
+
+strong{
+    font-weight: bold;
+}
+
+abc{
+    color: limegreen;
+}
+
+bg_red{
+    background-color: red;
+}
+
+.bgred{
+    background-color: brown;
+}
