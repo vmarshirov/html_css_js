@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap demo</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="card">
+        <div class="card-body">
+            <h5 class="card-title">Главный заголовок</h5>
+        </div>
+    </header>
+
+
+    <div class="card ">
+        <navigation class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item"><a aria-current="true" class="nav-link " href="./index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="./form.html">Форма</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./form_abc.html">Алгоритмическая задача</a></li>
+            </ul>
+        </navigation>
+
+        <!--        Содержание относящееся к активной ссылке-->
+        <main class="card-body">
+            <h5 class="card-title text-center">Алгоритмическая задача</h5>
+            <p>Принадлежит ли целое С диапазону A-B? Если принадлежит - отправить все на сервер</p>
+            <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" id="UserEnter" name="UserEnter"
+                  target="_blank">
+                <ul class="list-group">
+                    <li class="list-group-item disabled"><input name="formulation" type="hidden"></li>
+                    <li class="list-group-item"><label>a: <input name="a" size="4" type="number" value=10></label></li>
+                    <li class="list-group-item"><label>b: <input name="b" size="4" type="number" value=20></label></li>
+                    <li class="list-group-item"><label>c: <input id="c" name="c" size="4" type="number"></label></li>
+                    <li class="list-group-item disabled"><input name="result" type="hidden"></li>
+                    <li class="list-group-item"><label><input id="verify" type="button" value="Проверить"></label></li>
+                    <li class="list-group-item"><label><input id="send" type="button" value="Отправить"></label></li>
+                </ul>
+            </form>
+            <p id="result">Результаты вычислений: </p>
+
+
+        </main>
+    </div>
+
+
+    <footer class="card">
+        <div class="card-body">
+            <p class="card-text">Контакты и др.</p>
+        </div>
+    </footer>
+
+
+</div>
+
+
+<script src="./js/0122_abc.js"></script>
+
+</body>
+</html>
